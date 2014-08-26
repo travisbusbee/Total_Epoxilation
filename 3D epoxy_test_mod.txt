@@ -1,0 +1,1449 @@
+$DO0.0 = 0
+G1 Z0.220 ; move to next layer (0)
+;LayerChange
+$DO0.0 = 0
+G1 X190.107 Y190.826 ; move to first skirt point
+$DO0.0 = 1
+G1 X191.853 Y189.391 ; skirt
+G1 X195.000 Y188.569 ; skirt
+G1 X205.000 Y188.569 ; skirt
+G1 X207.224 Y188.965 ; skirt
+$DO0.0 = 1
+G1 X209.174 Y190.107 ; skirt
+G1 X210.609 Y191.853 ; skirt
+G1 X211.431 Y195.000 ; skirt
+G1 X211.431 Y205.000 ; skirt
+G1 X211.035 Y207.224 ; skirt
+G1 X209.893 Y209.174 ; skirt
+G1 X208.147 Y210.609 ; skirt
+G1 X205.000 Y211.431 ; skirt
+G1 X195.000 Y211.431 ; skirt
+G1 X192.776 Y211.035 ; skirt
+G1 X190.826 Y209.893 ; skirt
+G1 X189.391 Y208.147 ; skirt
+G1 X188.569 Y205.000 ; skirt
+G1 X188.569 Y195.000 ; skirt
+G1 X188.965 Y192.776 ; skirt
+G1 X190.077 Y190.878 ; skirt
+$DO0.0 = 0
+G1 X204.780 Y204.780 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.220 Y204.780 ; perimeter
+G1 X195.220 Y195.220 ; perimeter
+G1 X204.780 Y195.220 ; perimeter
+G1 X204.780 Y204.720 ; perimeter
+$DO0.0 = 0
+G1 X204.434 Y204.580 ; move inwards before travel
+$DO0.0 = 0
+G1 X204.349 Y204.349 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.651 Y204.349 ; perimeter
+G1 X195.651 Y195.651 ; perimeter
+G1 X204.349 Y195.651 ; perimeter
+G1 X204.349 Y204.289 ; perimeter
+$DO0.0 = 0
+G1 X203.917 Y203.917 ; move to first perimeter point
+$DO0.0 = 1
+G1 X196.083 Y203.917 ; perimeter
+G1 X196.083 Y196.083 ; perimeter
+G1 X203.917 Y196.083 ; perimeter
+G1 X203.917 Y203.857 ; perimeter
+$DO0.0 = 0
+G1 X201.220 Y200.720 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.780 Y200.720 ; perimeter
+G1 X198.780 Y199.280 ; perimeter
+G1 X201.220 Y199.280 ; perimeter
+G1 X201.220 Y200.660 ; perimeter
+$DO0.0 = 0
+G1 X201.220 Y201.120 ; move inwards before travel
+$DO0.0 = 0
+G1 X201.651 Y201.151 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.349 Y201.151 ; perimeter
+G1 X198.349 Y198.849 ; perimeter
+G1 X201.651 Y198.849 ; perimeter
+G1 X201.651 Y201.091 ; perimeter
+$DO0.0 = 0
+G1 X202.083 Y201.583 ; move to first perimeter point
+$DO0.0 = 1
+G1 X197.917 Y201.583 ; perimeter
+G1 X197.917 Y198.417 ; perimeter
+G1 X202.083 Y198.417 ; perimeter
+G1 X202.083 Y201.523 ; perimeter
+$DO0.0 = 0
+G1 X202.376 Y198.928 ; move to first fill point
+$DO0.0 = 1
+G1 X203.624 Y200.177 ; fill
+G1 X203.624 Y200.804 ; fill
+G1 X202.376 Y199.555 ; fill
+G1 X202.376 Y200.182 ; fill
+G1 X203.624 Y201.430 ; fill
+G1 X203.624 Y202.057 ; fill
+G1 X202.376 Y200.808 ; fill
+G1 X202.376 Y201.435 ; fill
+G1 X203.624 Y202.684 ; fill
+G1 X203.624 Y203.311 ; fill
+G1 X202.189 Y201.876 ; fill
+G1 X201.562 Y201.876 ; fill
+G1 X203.311 Y203.624 ; fill
+G1 X202.684 Y203.624 ; fill
+G1 X200.935 Y201.876 ; fill
+G1 X200.308 Y201.876 ; fill
+G1 X202.057 Y203.624 ; fill
+G1 X201.430 Y203.624 ; fill
+G1 X199.682 Y201.876 ; fill
+G1 X199.055 Y201.876 ; fill
+G1 X200.804 Y203.624 ; fill
+G1 X200.177 Y203.624 ; fill
+G1 X198.428 Y201.876 ; fill
+$DO0.0 = 0
+G1 X196.376 Y203.584 ; move to first fill point
+$DO0.0 = 1
+G1 X196.416 Y203.624 ; fill
+G1 X197.042 Y203.624 ; fill
+G1 X196.376 Y202.958 ; fill
+G1 X196.376 Y202.331 ; fill
+G1 X197.669 Y203.624 ; fill
+G1 X198.296 Y203.624 ; fill
+G1 X196.376 Y201.704 ; fill
+G1 X196.376 Y201.077 ; fill
+G1 X198.923 Y203.624 ; fill
+G1 X199.550 Y203.624 ; fill
+G1 X196.376 Y200.450 ; fill
+G1 X196.376 Y199.823 ; fill
+G1 X197.624 Y201.072 ; fill
+G1 X197.624 Y200.445 ; fill
+G1 X196.376 Y199.196 ; fill
+G1 X196.376 Y198.570 ; fill
+G1 X197.624 Y199.818 ; fill
+G1 X197.624 Y199.192 ; fill
+G1 X196.376 Y197.943 ; fill
+G1 X196.376 Y197.316 ; fill
+G1 X197.624 Y198.565 ; fill
+G1 X197.811 Y198.124 ; fill
+G1 X196.376 Y196.689 ; fill
+G1 X196.689 Y196.376 ; fill
+G1 X198.438 Y198.124 ; fill
+G1 X199.065 Y198.124 ; fill
+G1 X197.316 Y196.376 ; fill
+G1 X197.943 Y196.376 ; fill
+G1 X199.692 Y198.124 ; fill
+G1 X200.318 Y198.124 ; fill
+G1 X198.570 Y196.376 ; fill
+G1 X199.196 Y196.376 ; fill
+G1 X200.945 Y198.124 ; fill
+G1 X201.572 Y198.124 ; fill
+G1 X199.823 Y196.376 ; fill
+G1 X200.450 Y196.376 ; fill
+G1 X203.624 Y199.550 ; fill
+G1 X203.624 Y198.923 ; fill
+G1 X201.077 Y196.376 ; fill
+G1 X201.704 Y196.376 ; fill
+G1 X203.624 Y198.296 ; fill
+G1 X203.624 Y197.669 ; fill
+G1 X202.331 Y196.376 ; fill
+G1 X202.958 Y196.376 ; fill
+G1 X203.624 Y197.042 ; fill
+G1 X203.624 Y196.416 ; fill
+G1 X203.584 Y196.376 ; fill
+$DO0.0 = 0
+G91
+F40
+G1 A10
+$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)
+$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)
+G1 X-104 Y-1
+G92 X$currentX Y$currentY
+G1 B-10
+G90
+G1 F4
+;ToolChange
+$DO1.0 = 0
+G1 X200.780 Y200.280 ; move to first perimeter point
+$DO1.0 = 1
+G1 X199.220 Y200.280 ; perimeter
+G1 X199.220 Y199.720 ; perimeter
+G1 X200.780 Y199.720 ; perimeter
+G1 X200.780 Y200.205 ; perimeter
+$DO1.0 = 0
+G1 X200.347 Y200.030 ; move inwards before travel
+M106 S255 ; enable fan
+$DO1.0 = 0
+G1 Z0.440 ; move to next layer (1)
+;LayerChange
+$DO1.0 = 0
+G91
+F40
+G1 B10
+POSOFFSET CLEAR X Y
+G1 X104 Y1
+G90
+G1 A-10
+G1 F12
+;ToolChange
+$DO0.0 = 0
+G1 X204.800 Y204.800 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.200 Y204.800 ; perimeter
+G1 X195.200 Y195.200 ; perimeter
+G1 X204.800 Y195.200 ; perimeter
+G1 X204.800 Y204.740 ; perimeter
+$DO0.0 = 0
+G1 X204.454 Y204.600 ; move inwards before travel
+$DO0.0 = 0
+G1 X204.400 Y204.400 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.600 Y204.400 ; perimeter
+G1 X195.600 Y195.600 ; perimeter
+G1 X204.400 Y195.600 ; perimeter
+G1 X204.400 Y204.340 ; perimeter
+$DO0.0 = 0
+G1 X204.000 Y204.000 ; move to first perimeter point
+$DO0.0 = 1
+G1 X196.000 Y204.000 ; perimeter
+G1 X196.000 Y196.000 ; perimeter
+G1 X204.000 Y196.000 ; perimeter
+G1 X204.000 Y203.940 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y200.700 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.800 Y200.700 ; perimeter
+G1 X198.800 Y199.300 ; perimeter
+G1 X201.200 Y199.300 ; perimeter
+G1 X201.200 Y200.640 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y201.100 ; move inwards before travel
+$DO0.0 = 0
+G1 X201.600 Y201.100 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.400 Y201.100 ; perimeter
+G1 X198.400 Y198.900 ; perimeter
+G1 X201.600 Y198.900 ; perimeter
+G1 X201.600 Y201.040 ; perimeter
+$DO0.0 = 0
+G1 X202.000 Y201.500 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.000 Y201.500 ; perimeter
+G1 X198.000 Y198.500 ; perimeter
+G1 X202.000 Y198.500 ; perimeter
+G1 X202.000 Y201.440 ; perimeter
+$DO0.0 = 0
+G1 X202.309 Y200.955 ; move to first fill point
+$DO0.0 = 1
+G1 X203.692 Y199.572 ; fill
+G1 X203.692 Y198.756 ; fill
+G1 X202.309 Y200.139 ; fill
+G1 X202.308 Y199.323 ; fill
+G1 X203.692 Y197.940 ; fill
+G1 X203.692 Y197.124 ; fill
+G1 X202.308 Y198.507 ; fill
+G1 X201.808 Y198.192 ; fill
+G1 X203.672 Y196.329 ; fill
+G1 X202.876 Y196.309 ; fill
+G1 X200.993 Y198.192 ; fill
+G1 X200.177 Y198.192 ; fill
+G1 X202.060 Y196.309 ; fill
+G1 X201.244 Y196.309 ; fill
+G1 X199.361 Y198.192 ; fill
+G1 X198.545 Y198.192 ; fill
+G1 X200.428 Y196.309 ; fill
+G1 X199.612 Y196.309 ; fill
+G1 X197.729 Y198.192 ; fill
+$DO0.0 = 0
+G1 X196.309 Y196.349 ; move to first fill point
+$DO0.0 = 1
+G1 X196.349 Y196.309 ; fill
+G1 X197.164 Y196.309 ; fill
+G1 X196.309 Y197.164 ; fill
+G1 X196.309 Y197.980 ; fill
+G1 X197.980 Y196.309 ; fill
+G1 X198.796 Y196.309 ; fill
+G1 X196.309 Y198.796 ; fill
+G1 X196.309 Y199.612 ; fill
+G1 X197.692 Y198.229 ; fill
+G1 X197.692 Y199.045 ; fill
+G1 X196.309 Y200.428 ; fill
+G1 X196.309 Y201.244 ; fill
+G1 X197.692 Y199.861 ; fill
+G1 X197.692 Y200.677 ; fill
+G1 X196.309 Y202.060 ; fill
+G1 X196.309 Y202.876 ; fill
+G1 X197.692 Y201.493 ; fill
+G1 X198.192 Y201.809 ; fill
+G1 X196.329 Y203.672 ; fill
+G1 X197.124 Y203.692 ; fill
+G1 X199.007 Y201.809 ; fill
+G1 X199.823 Y201.809 ; fill
+G1 X197.940 Y203.692 ; fill
+G1 X198.756 Y203.692 ; fill
+G1 X200.639 Y201.809 ; fill
+G1 X201.455 Y201.809 ; fill
+G1 X199.572 Y203.692 ; fill
+G1 X200.388 Y203.692 ; fill
+G1 X203.692 Y200.388 ; fill
+G1 X203.692 Y201.204 ; fill
+G1 X201.204 Y203.692 ; fill
+G1 X202.020 Y203.692 ; fill
+G1 X203.692 Y202.020 ; fill
+G1 X203.692 Y202.836 ; fill
+G1 X202.836 Y203.692 ; fill
+G1 X203.652 Y203.692 ; fill
+G1 X203.692 Y203.652 ; fill
+$DO0.0 = 0
+G91
+F40
+G1 A10
+$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)
+$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)
+G1 X-104 Y-1
+G92 X$currentX Y$currentY
+G1 B-10
+G90
+G1 F4
+;ToolChange
+$DO1.0 = 0
+G1 X200.750 Y200.250 ; move to first perimeter point
+$DO1.0 = 1
+G1 X199.250 Y200.250 ; perimeter
+G1 X199.250 Y199.750 ; perimeter
+G1 X200.750 Y199.750 ; perimeter
+G1 X200.750 Y200.175 ; perimeter
+$DO1.0 = 0
+G1 X200.317 Y200.000 ; move inwards before travel
+$DO1.0 = 0
+G1 Z0.660 ; move to next layer (2)
+;LayerChange
+$DO1.0 = 0
+G91
+F40
+G1 B10
+POSOFFSET CLEAR X Y
+G1 X104 Y1
+G90
+G1 A-10
+G1 F12
+;ToolChange
+$DO0.0 = 0
+G1 X204.800 Y204.800 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.200 Y204.800 ; perimeter
+G1 X195.200 Y195.200 ; perimeter
+G1 X204.800 Y195.200 ; perimeter
+G1 X204.800 Y204.740 ; perimeter
+$DO0.0 = 0
+G1 X204.454 Y204.600 ; move inwards before travel
+$DO0.0 = 0
+G1 X204.400 Y204.400 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.600 Y204.400 ; perimeter
+G1 X195.600 Y195.600 ; perimeter
+G1 X204.400 Y195.600 ; perimeter
+G1 X204.400 Y204.340 ; perimeter
+$DO0.0 = 0
+G1 X204.000 Y204.000 ; move to first perimeter point
+$DO0.0 = 1
+G1 X196.000 Y204.000 ; perimeter
+G1 X196.000 Y196.000 ; perimeter
+G1 X204.000 Y196.000 ; perimeter
+G1 X204.000 Y203.940 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y200.700 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.800 Y200.700 ; perimeter
+G1 X198.800 Y199.300 ; perimeter
+G1 X201.200 Y199.300 ; perimeter
+G1 X201.200 Y200.640 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y201.100 ; move inwards before travel
+$DO0.0 = 0
+G1 X201.600 Y201.100 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.400 Y201.100 ; perimeter
+G1 X198.400 Y198.900 ; perimeter
+G1 X201.600 Y198.900 ; perimeter
+G1 X201.600 Y201.040 ; perimeter
+$DO0.0 = 0
+G1 X202.000 Y201.500 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.000 Y201.500 ; perimeter
+G1 X198.000 Y198.500 ; perimeter
+G1 X202.000 Y198.500 ; perimeter
+G1 X202.000 Y201.440 ; perimeter
+$DO0.0 = 0
+G1 X201.455 Y198.192 ; move to first fill point
+$DO0.0 = 1
+G1 X199.572 Y196.309 ; fill
+G1 X198.756 Y196.309 ; fill
+G1 X200.639 Y198.192 ; fill
+G1 X199.823 Y198.192 ; fill
+G1 X197.940 Y196.309 ; fill
+G1 X197.124 Y196.309 ; fill
+G1 X199.007 Y198.192 ; fill
+G1 X198.192 Y198.192 ; fill
+G1 X196.329 Y196.329 ; fill
+G1 X196.309 Y197.124 ; fill
+G1 X197.692 Y198.507 ; fill
+G1 X197.692 Y199.323 ; fill
+G1 X196.309 Y197.940 ; fill
+G1 X196.309 Y198.756 ; fill
+G1 X197.692 Y200.139 ; fill
+G1 X197.692 Y200.955 ; fill
+G1 X196.309 Y199.572 ; fill
+G1 X196.309 Y200.388 ; fill
+G1 X197.692 Y201.771 ; fill
+$DO0.0 = 0
+G1 X196.349 Y203.692 ; move to first fill point
+$DO0.0 = 1
+G1 X196.309 Y203.652 ; fill
+G1 X196.309 Y202.836 ; fill
+G1 X197.164 Y203.692 ; fill
+G1 X197.980 Y203.692 ; fill
+G1 X196.309 Y202.020 ; fill
+G1 X196.309 Y201.204 ; fill
+G1 X198.796 Y203.692 ; fill
+G1 X199.612 Y203.692 ; fill
+G1 X197.729 Y201.808 ; fill
+G1 X198.545 Y201.808 ; fill
+G1 X200.428 Y203.692 ; fill
+G1 X201.244 Y203.692 ; fill
+G1 X199.361 Y201.808 ; fill
+G1 X200.177 Y201.809 ; fill
+G1 X202.060 Y203.692 ; fill
+G1 X202.876 Y203.692 ; fill
+G1 X200.993 Y201.809 ; fill
+G1 X201.809 Y201.809 ; fill
+G1 X203.672 Y203.672 ; fill
+G1 X203.692 Y202.876 ; fill
+G1 X202.309 Y201.493 ; fill
+G1 X202.309 Y200.677 ; fill
+G1 X203.692 Y202.060 ; fill
+G1 X203.692 Y201.244 ; fill
+G1 X202.309 Y199.861 ; fill
+G1 X202.309 Y199.045 ; fill
+G1 X203.692 Y200.428 ; fill
+G1 X203.692 Y199.612 ; fill
+G1 X200.388 Y196.309 ; fill
+G1 X201.204 Y196.309 ; fill
+G1 X203.692 Y198.796 ; fill
+G1 X203.692 Y197.980 ; fill
+G1 X202.020 Y196.309 ; fill
+G1 X202.836 Y196.309 ; fill
+G1 X203.692 Y197.164 ; fill
+G1 X203.692 Y196.349 ; fill
+G1 X203.652 Y196.309 ; fill
+$DO0.0 = 0
+G91
+F40
+G1 A10
+$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)
+$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)
+G1 X-104 Y-1
+G92 X$currentX Y$currentY
+G1 B-10
+G90
+G1 F4
+;ToolChange
+$DO1.0 = 0
+G1 X200.750 Y200.250 ; move to first perimeter point
+$DO1.0 = 1
+G1 X199.250 Y200.250 ; perimeter
+G1 X199.250 Y199.750 ; perimeter
+G1 X200.750 Y199.750 ; perimeter
+G1 X200.750 Y200.175 ; perimeter
+$DO1.0 = 0
+G1 X200.317 Y200.000 ; move inwards before travel
+$DO1.0 = 0
+G1 Z0.880 ; move to next layer (3)
+;LayerChange
+$DO1.0 = 0
+G91
+F40
+G1 B10
+POSOFFSET CLEAR X Y
+G1 X104 Y1
+G90
+G1 A-10
+G1 F12
+;ToolChange
+$DO0.0 = 0
+G1 X204.800 Y204.800 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.200 Y204.800 ; perimeter
+G1 X195.200 Y195.200 ; perimeter
+G1 X204.800 Y195.200 ; perimeter
+G1 X204.800 Y204.740 ; perimeter
+$DO0.0 = 0
+G1 X204.454 Y204.600 ; move inwards before travel
+$DO0.0 = 0
+G1 X204.400 Y204.400 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.600 Y204.400 ; perimeter
+G1 X195.600 Y195.600 ; perimeter
+G1 X204.400 Y195.600 ; perimeter
+G1 X204.400 Y204.340 ; perimeter
+$DO0.0 = 0
+G1 X204.000 Y204.000 ; move to first perimeter point
+$DO0.0 = 1
+G1 X196.000 Y204.000 ; perimeter
+G1 X196.000 Y196.000 ; perimeter
+G1 X204.000 Y196.000 ; perimeter
+G1 X204.000 Y203.940 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y200.700 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.800 Y200.700 ; perimeter
+G1 X198.800 Y199.300 ; perimeter
+G1 X201.200 Y199.300 ; perimeter
+G1 X201.200 Y200.640 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y201.100 ; move inwards before travel
+$DO0.0 = 0
+G1 X201.600 Y201.100 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.400 Y201.100 ; perimeter
+G1 X198.400 Y198.900 ; perimeter
+G1 X201.600 Y198.900 ; perimeter
+G1 X201.600 Y201.040 ; perimeter
+$DO0.0 = 0
+G1 X202.000 Y201.500 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.000 Y201.500 ; perimeter
+G1 X198.000 Y198.500 ; perimeter
+G1 X202.000 Y198.500 ; perimeter
+G1 X202.000 Y201.440 ; perimeter
+$DO0.0 = 0
+G1 X202.309 Y200.955 ; move to first fill point
+$DO0.0 = 1
+G1 X203.691 Y199.572 ; fill
+G1 X203.691 Y198.756 ; fill
+G1 X202.309 Y200.139 ; fill
+G1 X202.309 Y199.323 ; fill
+G1 X203.691 Y197.940 ; fill
+G1 X203.691 Y197.124 ; fill
+G1 X202.309 Y198.507 ; fill
+G1 X201.809 Y198.191 ; fill
+G1 X203.671 Y196.329 ; fill
+G1 X202.876 Y196.309 ; fill
+G1 X200.993 Y198.191 ; fill
+G1 X200.177 Y198.191 ; fill
+G1 X202.060 Y196.309 ; fill
+G1 X201.244 Y196.309 ; fill
+G1 X199.361 Y198.191 ; fill
+G1 X198.545 Y198.191 ; fill
+G1 X200.428 Y196.309 ; fill
+G1 X199.612 Y196.309 ; fill
+G1 X197.729 Y198.191 ; fill
+$DO0.0 = 0
+G1 X196.309 Y196.349 ; move to first fill point
+$DO0.0 = 1
+G1 X196.349 Y196.309 ; fill
+G1 X197.164 Y196.309 ; fill
+G1 X196.309 Y197.164 ; fill
+G1 X196.309 Y197.980 ; fill
+G1 X197.980 Y196.309 ; fill
+G1 X198.796 Y196.309 ; fill
+G1 X196.309 Y198.796 ; fill
+G1 X196.309 Y199.612 ; fill
+G1 X197.691 Y198.229 ; fill
+G1 X197.691 Y199.045 ; fill
+G1 X196.309 Y200.428 ; fill
+G1 X196.309 Y201.244 ; fill
+G1 X197.691 Y199.861 ; fill
+G1 X197.691 Y200.677 ; fill
+G1 X196.309 Y202.060 ; fill
+G1 X196.309 Y202.876 ; fill
+G1 X197.691 Y201.493 ; fill
+G1 X198.191 Y201.809 ; fill
+G1 X196.329 Y203.671 ; fill
+G1 X197.124 Y203.691 ; fill
+G1 X199.007 Y201.809 ; fill
+G1 X199.823 Y201.809 ; fill
+G1 X197.940 Y203.691 ; fill
+G1 X198.756 Y203.691 ; fill
+G1 X200.639 Y201.809 ; fill
+G1 X201.455 Y201.809 ; fill
+G1 X199.572 Y203.691 ; fill
+G1 X200.388 Y203.691 ; fill
+G1 X203.691 Y200.388 ; fill
+G1 X203.691 Y201.204 ; fill
+G1 X201.204 Y203.691 ; fill
+G1 X202.020 Y203.691 ; fill
+G1 X203.691 Y202.020 ; fill
+G1 X203.691 Y202.836 ; fill
+G1 X202.836 Y203.691 ; fill
+G1 X203.651 Y203.691 ; fill
+G1 X203.691 Y203.651 ; fill
+$DO0.0 = 0
+G91
+F40
+G1 A10
+$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)
+$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)
+G1 X-104 Y-1
+G92 X$currentX Y$currentY
+G1 B-10
+G90
+G1 F4
+;ToolChange
+$DO1.0 = 0
+G1 X200.750 Y200.250 ; move to first perimeter point
+$DO1.0 = 1
+G1 X199.250 Y200.250 ; perimeter
+G1 X199.250 Y199.750 ; perimeter
+G1 X200.750 Y199.750 ; perimeter
+G1 X200.750 Y200.175 ; perimeter
+$DO1.0 = 0
+G1 X200.317 Y200.000 ; move inwards before travel
+$DO1.0 = 0
+G1 Z1.100 ; move to next layer (4)
+;LayerChange
+$DO1.0 = 0
+G91
+F40
+G1 B10
+POSOFFSET CLEAR X Y
+G1 X104 Y1
+G90
+G1 A-10
+G1 F12
+;ToolChange
+$DO0.0 = 0
+G1 X204.800 Y204.800 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.200 Y204.800 ; perimeter
+G1 X195.200 Y195.200 ; perimeter
+G1 X204.800 Y195.200 ; perimeter
+G1 X204.800 Y204.740 ; perimeter
+$DO0.0 = 0
+G1 X204.454 Y204.600 ; move inwards before travel
+$DO0.0 = 0
+G1 X204.400 Y204.400 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.600 Y204.400 ; perimeter
+G1 X195.600 Y195.600 ; perimeter
+G1 X204.400 Y195.600 ; perimeter
+G1 X204.400 Y204.340 ; perimeter
+$DO0.0 = 0
+G1 X204.000 Y204.000 ; move to first perimeter point
+$DO0.0 = 1
+G1 X196.000 Y204.000 ; perimeter
+G1 X196.000 Y196.000 ; perimeter
+G1 X204.000 Y196.000 ; perimeter
+G1 X204.000 Y203.940 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y200.700 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.800 Y200.700 ; perimeter
+G1 X198.800 Y199.300 ; perimeter
+G1 X201.200 Y199.300 ; perimeter
+G1 X201.200 Y200.640 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y201.100 ; move inwards before travel
+$DO0.0 = 0
+G1 X201.600 Y201.100 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.400 Y201.100 ; perimeter
+G1 X198.400 Y198.900 ; perimeter
+G1 X201.600 Y198.900 ; perimeter
+G1 X201.600 Y201.040 ; perimeter
+$DO0.0 = 0
+G1 X202.000 Y201.500 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.000 Y201.500 ; perimeter
+G1 X198.000 Y198.500 ; perimeter
+G1 X202.000 Y198.500 ; perimeter
+G1 X202.000 Y201.440 ; perimeter
+$DO0.0 = 0
+G1 X201.455 Y198.191 ; move to first fill point
+$DO0.0 = 1
+G1 X199.572 Y196.309 ; fill
+G1 X198.756 Y196.309 ; fill
+G1 X200.639 Y198.191 ; fill
+G1 X199.823 Y198.191 ; fill
+G1 X197.940 Y196.309 ; fill
+G1 X197.124 Y196.309 ; fill
+G1 X199.007 Y198.191 ; fill
+G1 X198.191 Y198.191 ; fill
+G1 X196.329 Y196.329 ; fill
+G1 X196.309 Y197.124 ; fill
+G1 X197.691 Y198.507 ; fill
+G1 X197.691 Y199.323 ; fill
+G1 X196.309 Y197.940 ; fill
+G1 X196.309 Y198.756 ; fill
+G1 X197.691 Y200.139 ; fill
+G1 X197.691 Y200.955 ; fill
+G1 X196.309 Y199.572 ; fill
+G1 X196.309 Y200.388 ; fill
+G1 X197.691 Y201.771 ; fill
+$DO0.0 = 0
+G1 X196.349 Y203.691 ; move to first fill point
+$DO0.0 = 1
+G1 X196.309 Y203.651 ; fill
+G1 X196.309 Y202.836 ; fill
+G1 X197.164 Y203.691 ; fill
+G1 X197.980 Y203.691 ; fill
+G1 X196.309 Y202.020 ; fill
+G1 X196.309 Y201.204 ; fill
+G1 X198.796 Y203.691 ; fill
+G1 X199.612 Y203.691 ; fill
+G1 X197.729 Y201.809 ; fill
+G1 X198.545 Y201.809 ; fill
+G1 X200.428 Y203.691 ; fill
+G1 X201.244 Y203.691 ; fill
+G1 X199.361 Y201.809 ; fill
+G1 X200.177 Y201.809 ; fill
+G1 X202.060 Y203.691 ; fill
+G1 X202.876 Y203.691 ; fill
+G1 X200.993 Y201.809 ; fill
+G1 X201.809 Y201.809 ; fill
+G1 X203.671 Y203.671 ; fill
+G1 X203.691 Y202.876 ; fill
+G1 X202.309 Y201.493 ; fill
+G1 X202.309 Y200.677 ; fill
+G1 X203.691 Y202.060 ; fill
+G1 X203.691 Y201.244 ; fill
+G1 X202.309 Y199.861 ; fill
+G1 X202.309 Y199.045 ; fill
+G1 X203.691 Y200.428 ; fill
+G1 X203.691 Y199.612 ; fill
+G1 X200.388 Y196.309 ; fill
+G1 X201.204 Y196.309 ; fill
+G1 X203.691 Y198.796 ; fill
+G1 X203.691 Y197.980 ; fill
+G1 X202.020 Y196.309 ; fill
+G1 X202.836 Y196.309 ; fill
+G1 X203.691 Y197.164 ; fill
+G1 X203.691 Y196.349 ; fill
+G1 X203.651 Y196.309 ; fill
+$DO0.0 = 0
+G91
+F40
+G1 A10
+$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)
+$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)
+G1 X-104 Y-1
+G92 X$currentX Y$currentY
+G1 B-10
+G90
+G1 F4
+;ToolChange
+$DO1.0 = 0
+G1 X200.750 Y200.250 ; move to first perimeter point
+$DO1.0 = 1
+G1 X199.250 Y200.250 ; perimeter
+G1 X199.250 Y199.750 ; perimeter
+G1 X200.750 Y199.750 ; perimeter
+G1 X200.750 Y200.175 ; perimeter
+$DO1.0 = 0
+G1 X200.317 Y200.000 ; move inwards before travel
+$DO1.0 = 0
+G1 Z1.320 ; move to next layer (5)
+;LayerChange
+$DO1.0 = 0
+G91
+F40
+G1 B10
+POSOFFSET CLEAR X Y
+G1 X104 Y1
+G90
+G1 A-10
+G1 F12
+;ToolChange
+$DO0.0 = 0
+G1 X204.800 Y204.800 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.200 Y204.800 ; perimeter
+G1 X195.200 Y195.200 ; perimeter
+G1 X204.800 Y195.200 ; perimeter
+G1 X204.800 Y204.740 ; perimeter
+$DO0.0 = 0
+G1 X204.454 Y204.600 ; move inwards before travel
+$DO0.0 = 0
+G1 X204.400 Y204.400 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.600 Y204.400 ; perimeter
+G1 X195.600 Y195.600 ; perimeter
+G1 X204.400 Y195.600 ; perimeter
+G1 X204.400 Y204.340 ; perimeter
+$DO0.0 = 0
+G1 X204.000 Y204.000 ; move to first perimeter point
+$DO0.0 = 1
+G1 X196.000 Y204.000 ; perimeter
+G1 X196.000 Y196.000 ; perimeter
+G1 X204.000 Y196.000 ; perimeter
+G1 X204.000 Y203.940 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y200.700 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.800 Y200.700 ; perimeter
+G1 X198.800 Y199.300 ; perimeter
+G1 X201.200 Y199.300 ; perimeter
+G1 X201.200 Y200.640 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y201.100 ; move inwards before travel
+$DO0.0 = 0
+G1 X201.600 Y201.100 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.400 Y201.100 ; perimeter
+G1 X198.400 Y198.900 ; perimeter
+G1 X201.600 Y198.900 ; perimeter
+G1 X201.600 Y201.040 ; perimeter
+$DO0.0 = 0
+G1 X202.000 Y201.500 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.000 Y201.500 ; perimeter
+G1 X198.000 Y198.500 ; perimeter
+G1 X202.000 Y198.500 ; perimeter
+G1 X202.000 Y201.440 ; perimeter
+$DO0.0 = 0
+G1 X202.309 Y200.955 ; move to first fill point
+$DO0.0 = 1
+G1 X203.691 Y199.572 ; fill
+G1 X203.691 Y198.756 ; fill
+G1 X202.309 Y200.139 ; fill
+G1 X202.309 Y199.323 ; fill
+G1 X203.691 Y197.940 ; fill
+G1 X203.691 Y197.124 ; fill
+G1 X202.309 Y198.507 ; fill
+G1 X201.809 Y198.191 ; fill
+G1 X203.671 Y196.329 ; fill
+G1 X202.876 Y196.309 ; fill
+G1 X200.993 Y198.191 ; fill
+G1 X200.177 Y198.191 ; fill
+G1 X202.060 Y196.309 ; fill
+G1 X201.244 Y196.309 ; fill
+G1 X199.361 Y198.191 ; fill
+G1 X198.545 Y198.191 ; fill
+G1 X200.428 Y196.309 ; fill
+G1 X199.612 Y196.309 ; fill
+G1 X197.729 Y198.191 ; fill
+$DO0.0 = 0
+G1 X196.309 Y196.349 ; move to first fill point
+$DO0.0 = 1
+G1 X196.349 Y196.309 ; fill
+G1 X197.164 Y196.309 ; fill
+G1 X196.309 Y197.164 ; fill
+G1 X196.309 Y197.980 ; fill
+G1 X197.980 Y196.309 ; fill
+G1 X198.796 Y196.309 ; fill
+G1 X196.309 Y198.796 ; fill
+G1 X196.309 Y199.612 ; fill
+G1 X197.691 Y198.229 ; fill
+G1 X197.691 Y199.045 ; fill
+G1 X196.309 Y200.428 ; fill
+G1 X196.309 Y201.244 ; fill
+G1 X197.691 Y199.861 ; fill
+G1 X197.691 Y200.677 ; fill
+G1 X196.309 Y202.060 ; fill
+G1 X196.309 Y202.876 ; fill
+G1 X197.691 Y201.493 ; fill
+G1 X198.191 Y201.809 ; fill
+G1 X196.329 Y203.671 ; fill
+G1 X197.124 Y203.691 ; fill
+G1 X199.007 Y201.809 ; fill
+G1 X199.823 Y201.809 ; fill
+G1 X197.940 Y203.691 ; fill
+G1 X198.756 Y203.691 ; fill
+G1 X200.639 Y201.809 ; fill
+G1 X201.455 Y201.809 ; fill
+G1 X199.572 Y203.691 ; fill
+G1 X200.388 Y203.691 ; fill
+G1 X203.691 Y200.388 ; fill
+G1 X203.691 Y201.204 ; fill
+G1 X201.204 Y203.691 ; fill
+G1 X202.020 Y203.691 ; fill
+G1 X203.691 Y202.020 ; fill
+G1 X203.691 Y202.836 ; fill
+G1 X202.836 Y203.691 ; fill
+G1 X203.651 Y203.691 ; fill
+G1 X203.691 Y203.651 ; fill
+$DO0.0 = 0
+G91
+F40
+G1 A10
+$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)
+$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)
+G1 X-104 Y-1
+G92 X$currentX Y$currentY
+G1 B-10
+G90
+G1 F4
+;ToolChange
+$DO1.0 = 0
+G1 X200.750 Y200.250 ; move to first perimeter point
+$DO1.0 = 1
+G1 X199.250 Y200.250 ; perimeter
+G1 X199.250 Y199.750 ; perimeter
+G1 X200.750 Y199.750 ; perimeter
+G1 X200.750 Y200.175 ; perimeter
+$DO1.0 = 0
+G1 X200.317 Y200.000 ; move inwards before travel
+$DO1.0 = 0
+G1 Z1.540 ; move to next layer (6)
+;LayerChange
+$DO1.0 = 0
+G91
+F40
+G1 B10
+POSOFFSET CLEAR X Y
+G1 X104 Y1
+G90
+G1 A-10
+G1 F12
+;ToolChange
+$DO0.0 = 0
+G1 X204.800 Y204.800 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.200 Y204.800 ; perimeter
+G1 X195.200 Y195.200 ; perimeter
+G1 X204.800 Y195.200 ; perimeter
+G1 X204.800 Y204.740 ; perimeter
+$DO0.0 = 0
+G1 X204.454 Y204.600 ; move inwards before travel
+$DO0.0 = 0
+G1 X204.400 Y204.400 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.600 Y204.400 ; perimeter
+G1 X195.600 Y195.600 ; perimeter
+G1 X204.400 Y195.600 ; perimeter
+G1 X204.400 Y204.340 ; perimeter
+$DO0.0 = 0
+G1 X204.000 Y204.000 ; move to first perimeter point
+$DO0.0 = 1
+G1 X196.000 Y204.000 ; perimeter
+G1 X196.000 Y196.000 ; perimeter
+G1 X204.000 Y196.000 ; perimeter
+G1 X204.000 Y203.940 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y200.700 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.800 Y200.700 ; perimeter
+G1 X198.800 Y199.300 ; perimeter
+G1 X201.200 Y199.300 ; perimeter
+G1 X201.200 Y200.640 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y201.100 ; move inwards before travel
+$DO0.0 = 0
+G1 X201.600 Y201.100 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.400 Y201.100 ; perimeter
+G1 X198.400 Y198.900 ; perimeter
+G1 X201.600 Y198.900 ; perimeter
+G1 X201.600 Y201.040 ; perimeter
+$DO0.0 = 0
+G1 X202.000 Y201.500 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.000 Y201.500 ; perimeter
+G1 X198.000 Y198.500 ; perimeter
+G1 X202.000 Y198.500 ; perimeter
+G1 X202.000 Y201.440 ; perimeter
+$DO0.0 = 0
+G1 X201.455 Y198.191 ; move to first fill point
+$DO0.0 = 1
+G1 X199.572 Y196.309 ; fill
+G1 X198.756 Y196.309 ; fill
+G1 X200.639 Y198.191 ; fill
+G1 X199.823 Y198.191 ; fill
+G1 X197.940 Y196.309 ; fill
+G1 X197.124 Y196.309 ; fill
+G1 X199.007 Y198.191 ; fill
+G1 X198.191 Y198.191 ; fill
+G1 X196.329 Y196.329 ; fill
+G1 X196.309 Y197.124 ; fill
+G1 X197.691 Y198.507 ; fill
+G1 X197.691 Y199.323 ; fill
+G1 X196.309 Y197.940 ; fill
+G1 X196.309 Y198.756 ; fill
+G1 X197.691 Y200.139 ; fill
+G1 X197.691 Y200.955 ; fill
+G1 X196.309 Y199.572 ; fill
+G1 X196.309 Y200.388 ; fill
+G1 X197.691 Y201.771 ; fill
+$DO0.0 = 0
+G1 X196.349 Y203.691 ; move to first fill point
+$DO0.0 = 1
+G1 X196.309 Y203.651 ; fill
+G1 X196.309 Y202.836 ; fill
+G1 X197.164 Y203.691 ; fill
+G1 X197.980 Y203.691 ; fill
+G1 X196.309 Y202.020 ; fill
+G1 X196.309 Y201.204 ; fill
+G1 X198.796 Y203.691 ; fill
+G1 X199.612 Y203.691 ; fill
+G1 X197.729 Y201.809 ; fill
+G1 X198.545 Y201.809 ; fill
+G1 X200.428 Y203.691 ; fill
+G1 X201.244 Y203.691 ; fill
+G1 X199.361 Y201.809 ; fill
+G1 X200.177 Y201.809 ; fill
+G1 X202.060 Y203.691 ; fill
+G1 X202.876 Y203.691 ; fill
+G1 X200.993 Y201.809 ; fill
+G1 X201.809 Y201.809 ; fill
+G1 X203.671 Y203.671 ; fill
+G1 X203.691 Y202.876 ; fill
+G1 X202.309 Y201.493 ; fill
+G1 X202.309 Y200.677 ; fill
+G1 X203.691 Y202.060 ; fill
+G1 X203.691 Y201.244 ; fill
+G1 X202.309 Y199.861 ; fill
+G1 X202.309 Y199.045 ; fill
+G1 X203.691 Y200.428 ; fill
+G1 X203.691 Y199.612 ; fill
+G1 X200.388 Y196.309 ; fill
+G1 X201.204 Y196.309 ; fill
+G1 X203.691 Y198.796 ; fill
+G1 X203.691 Y197.980 ; fill
+G1 X202.020 Y196.309 ; fill
+G1 X202.836 Y196.309 ; fill
+G1 X203.691 Y197.164 ; fill
+G1 X203.691 Y196.349 ; fill
+G1 X203.651 Y196.309 ; fill
+$DO0.0 = 0
+G91
+F40
+G1 A10
+$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)
+$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)
+G1 X-104 Y-1
+G92 X$currentX Y$currentY
+G1 B-10
+G90
+G1 F4
+;ToolChange
+$DO1.0 = 0
+G1 X200.750 Y200.250 ; move to first perimeter point
+$DO1.0 = 1
+G1 X199.250 Y200.250 ; perimeter
+G1 X199.250 Y199.750 ; perimeter
+G1 X200.750 Y199.750 ; perimeter
+G1 X200.750 Y200.175 ; perimeter
+$DO1.0 = 0
+G1 X200.317 Y200.000 ; move inwards before travel
+$DO1.0 = 0
+G1 Z1.760 ; move to next layer (7)
+;LayerChange
+$DO1.0 = 0
+G91
+F40
+G1 B10
+POSOFFSET CLEAR X Y
+G1 X104 Y1
+G90
+G1 A-10
+G1 F12
+;ToolChange
+$DO0.0 = 0
+G1 X204.800 Y204.800 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.200 Y204.800 ; perimeter
+G1 X195.200 Y195.200 ; perimeter
+G1 X204.800 Y195.200 ; perimeter
+G1 X204.800 Y204.740 ; perimeter
+$DO0.0 = 0
+G1 X204.454 Y204.600 ; move inwards before travel
+$DO0.0 = 0
+G1 X204.400 Y204.400 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.600 Y204.400 ; perimeter
+G1 X195.600 Y195.600 ; perimeter
+G1 X204.400 Y195.600 ; perimeter
+G1 X204.400 Y204.340 ; perimeter
+$DO0.0 = 0
+G1 X204.000 Y204.000 ; move to first perimeter point
+$DO0.0 = 1
+G1 X196.000 Y204.000 ; perimeter
+G1 X196.000 Y196.000 ; perimeter
+G1 X204.000 Y196.000 ; perimeter
+G1 X204.000 Y203.940 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y200.700 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.800 Y200.700 ; perimeter
+G1 X198.800 Y199.300 ; perimeter
+G1 X201.200 Y199.300 ; perimeter
+G1 X201.200 Y200.640 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y201.100 ; move inwards before travel
+$DO0.0 = 0
+G1 X201.600 Y201.100 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.400 Y201.100 ; perimeter
+G1 X198.400 Y198.900 ; perimeter
+G1 X201.600 Y198.900 ; perimeter
+G1 X201.600 Y201.040 ; perimeter
+$DO0.0 = 0
+G1 X202.000 Y201.500 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.000 Y201.500 ; perimeter
+G1 X198.000 Y198.500 ; perimeter
+G1 X202.000 Y198.500 ; perimeter
+G1 X202.000 Y201.440 ; perimeter
+$DO0.0 = 0
+G1 X202.309 Y200.955 ; move to first fill point
+$DO0.0 = 1
+G1 X203.692 Y199.572 ; fill
+G1 X203.692 Y198.756 ; fill
+G1 X202.309 Y200.139 ; fill
+G1 X202.308 Y199.323 ; fill
+G1 X203.692 Y197.940 ; fill
+G1 X203.692 Y197.124 ; fill
+G1 X202.308 Y198.507 ; fill
+G1 X201.808 Y198.192 ; fill
+G1 X203.672 Y196.329 ; fill
+G1 X202.876 Y196.309 ; fill
+G1 X200.993 Y198.192 ; fill
+G1 X200.177 Y198.192 ; fill
+G1 X202.060 Y196.309 ; fill
+G1 X201.244 Y196.309 ; fill
+G1 X199.361 Y198.192 ; fill
+G1 X198.545 Y198.192 ; fill
+G1 X200.428 Y196.309 ; fill
+G1 X199.612 Y196.309 ; fill
+G1 X197.729 Y198.192 ; fill
+$DO0.0 = 0
+G1 X196.309 Y196.349 ; move to first fill point
+$DO0.0 = 1
+G1 X196.349 Y196.309 ; fill
+G1 X197.164 Y196.309 ; fill
+G1 X196.309 Y197.164 ; fill
+G1 X196.309 Y197.980 ; fill
+G1 X197.980 Y196.309 ; fill
+G1 X198.796 Y196.309 ; fill
+G1 X196.309 Y198.796 ; fill
+G1 X196.309 Y199.612 ; fill
+G1 X197.692 Y198.229 ; fill
+G1 X197.692 Y199.045 ; fill
+G1 X196.309 Y200.428 ; fill
+G1 X196.309 Y201.244 ; fill
+G1 X197.692 Y199.861 ; fill
+G1 X197.692 Y200.677 ; fill
+G1 X196.309 Y202.060 ; fill
+G1 X196.309 Y202.876 ; fill
+G1 X197.692 Y201.493 ; fill
+G1 X198.192 Y201.809 ; fill
+G1 X196.329 Y203.672 ; fill
+G1 X197.124 Y203.692 ; fill
+G1 X199.007 Y201.809 ; fill
+G1 X199.823 Y201.809 ; fill
+G1 X197.940 Y203.692 ; fill
+G1 X198.756 Y203.692 ; fill
+G1 X200.639 Y201.809 ; fill
+G1 X201.455 Y201.809 ; fill
+G1 X199.572 Y203.692 ; fill
+G1 X200.388 Y203.692 ; fill
+G1 X203.692 Y200.388 ; fill
+G1 X203.692 Y201.204 ; fill
+G1 X201.204 Y203.692 ; fill
+G1 X202.020 Y203.692 ; fill
+G1 X203.692 Y202.020 ; fill
+G1 X203.692 Y202.836 ; fill
+G1 X202.836 Y203.692 ; fill
+G1 X203.652 Y203.692 ; fill
+G1 X203.692 Y203.652 ; fill
+$DO0.0 = 0
+G91
+F40
+G1 A10
+$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)
+$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)
+G1 X-104 Y-1
+G92 X$currentX Y$currentY
+G1 B-10
+G90
+G1 F4
+;ToolChange
+$DO1.0 = 0
+G1 X200.750 Y200.250 ; move to first perimeter point
+$DO1.0 = 1
+G1 X199.250 Y200.250 ; perimeter
+G1 X199.250 Y199.750 ; perimeter
+G1 X200.750 Y199.750 ; perimeter
+G1 X200.750 Y200.175 ; perimeter
+$DO1.0 = 0
+G1 X200.317 Y200.000 ; move inwards before travel
+$DO1.0 = 0
+G1 Z1.980 ; move to next layer (8)
+;LayerChange
+$DO1.0 = 0
+G91
+F40
+G1 B10
+POSOFFSET CLEAR X Y
+G1 X104 Y1
+G90
+G1 A-10
+G1 F12
+;ToolChange
+$DO0.0 = 0
+G1 X204.800 Y204.800 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.200 Y204.800 ; perimeter
+G1 X195.200 Y195.200 ; perimeter
+G1 X204.800 Y195.200 ; perimeter
+G1 X204.800 Y204.740 ; perimeter
+$DO0.0 = 0
+G1 X204.454 Y204.600 ; move inwards before travel
+$DO0.0 = 0
+G1 X204.400 Y204.400 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.600 Y204.400 ; perimeter
+G1 X195.600 Y195.600 ; perimeter
+G1 X204.400 Y195.600 ; perimeter
+G1 X204.400 Y204.340 ; perimeter
+$DO0.0 = 0
+G1 X204.000 Y204.000 ; move to first perimeter point
+$DO0.0 = 1
+G1 X196.000 Y204.000 ; perimeter
+G1 X196.000 Y196.000 ; perimeter
+G1 X204.000 Y196.000 ; perimeter
+G1 X204.000 Y203.940 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y200.700 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.800 Y200.700 ; perimeter
+G1 X198.800 Y199.300 ; perimeter
+G1 X201.200 Y199.300 ; perimeter
+G1 X201.200 Y200.640 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y201.100 ; move inwards before travel
+$DO0.0 = 0
+G1 X201.600 Y201.100 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.400 Y201.100 ; perimeter
+G1 X198.400 Y198.900 ; perimeter
+G1 X201.600 Y198.900 ; perimeter
+G1 X201.600 Y201.040 ; perimeter
+$DO0.0 = 0
+G1 X202.000 Y201.500 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.000 Y201.500 ; perimeter
+G1 X198.000 Y198.500 ; perimeter
+G1 X202.000 Y198.500 ; perimeter
+G1 X202.000 Y201.440 ; perimeter
+$DO0.0 = 0
+G1 X201.455 Y198.192 ; move to first fill point
+$DO0.0 = 1
+G1 X199.572 Y196.309 ; fill
+G1 X198.756 Y196.309 ; fill
+G1 X200.639 Y198.192 ; fill
+G1 X199.823 Y198.192 ; fill
+G1 X197.940 Y196.309 ; fill
+G1 X197.124 Y196.309 ; fill
+G1 X199.007 Y198.192 ; fill
+G1 X198.192 Y198.192 ; fill
+G1 X196.329 Y196.329 ; fill
+G1 X196.309 Y197.124 ; fill
+G1 X197.692 Y198.507 ; fill
+G1 X197.692 Y199.323 ; fill
+G1 X196.309 Y197.940 ; fill
+G1 X196.309 Y198.756 ; fill
+G1 X197.692 Y200.139 ; fill
+G1 X197.692 Y200.955 ; fill
+G1 X196.309 Y199.572 ; fill
+G1 X196.309 Y200.388 ; fill
+G1 X197.692 Y201.771 ; fill
+$DO0.0 = 0
+G1 X196.349 Y203.692 ; move to first fill point
+$DO0.0 = 1
+G1 X196.309 Y203.652 ; fill
+G1 X196.309 Y202.836 ; fill
+G1 X197.164 Y203.692 ; fill
+G1 X197.980 Y203.692 ; fill
+G1 X196.309 Y202.020 ; fill
+G1 X196.309 Y201.204 ; fill
+G1 X198.796 Y203.692 ; fill
+G1 X199.612 Y203.692 ; fill
+G1 X197.729 Y201.808 ; fill
+G1 X198.545 Y201.808 ; fill
+G1 X200.428 Y203.692 ; fill
+G1 X201.244 Y203.692 ; fill
+G1 X199.361 Y201.808 ; fill
+G1 X200.177 Y201.809 ; fill
+G1 X202.060 Y203.692 ; fill
+G1 X202.876 Y203.692 ; fill
+G1 X200.993 Y201.809 ; fill
+G1 X201.809 Y201.809 ; fill
+G1 X203.672 Y203.672 ; fill
+G1 X203.692 Y202.876 ; fill
+G1 X202.309 Y201.493 ; fill
+G1 X202.309 Y200.677 ; fill
+G1 X203.692 Y202.060 ; fill
+G1 X203.692 Y201.244 ; fill
+G1 X202.309 Y199.861 ; fill
+G1 X202.309 Y199.045 ; fill
+G1 X203.692 Y200.428 ; fill
+G1 X203.692 Y199.612 ; fill
+G1 X200.388 Y196.309 ; fill
+G1 X201.204 Y196.309 ; fill
+G1 X203.692 Y198.796 ; fill
+G1 X203.692 Y197.980 ; fill
+G1 X202.020 Y196.309 ; fill
+G1 X202.836 Y196.309 ; fill
+G1 X203.692 Y197.164 ; fill
+G1 X203.692 Y196.349 ; fill
+G1 X203.652 Y196.309 ; fill
+$DO0.0 = 0
+G91
+F40
+G1 A10
+$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)
+$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)
+G1 X-104 Y-1
+G92 X$currentX Y$currentY
+G1 B-10
+G90
+G1 F4
+;ToolChange
+$DO1.0 = 0
+G1 X200.750 Y200.250 ; move to first perimeter point
+$DO1.0 = 1
+G1 X199.250 Y200.250 ; perimeter
+G1 X199.250 Y199.750 ; perimeter
+G1 X200.750 Y199.750 ; perimeter
+G1 X200.750 Y200.175 ; perimeter
+$DO1.0 = 0
+G1 X200.317 Y200.000 ; move inwards before travel
+$DO1.0 = 0
+G1 Z2.200 ; move to next layer (9)
+;LayerChange
+$DO1.0 = 0
+G91
+F40
+G1 B10
+POSOFFSET CLEAR X Y
+G1 X104 Y1
+G90
+G1 A-10
+G1 F12
+;ToolChange
+$DO0.0 = 0
+G1 X204.800 Y204.800 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.200 Y204.800 ; perimeter
+G1 X195.200 Y195.200 ; perimeter
+G1 X204.800 Y195.200 ; perimeter
+G1 X204.800 Y204.740 ; perimeter
+$DO0.0 = 0
+G1 X204.454 Y204.600 ; move inwards before travel
+$DO0.0 = 0
+G1 X204.400 Y204.400 ; move to first perimeter point
+$DO0.0 = 1
+G1 X195.600 Y204.400 ; perimeter
+G1 X195.600 Y195.600 ; perimeter
+G1 X204.400 Y195.600 ; perimeter
+G1 X204.400 Y204.340 ; perimeter
+$DO0.0 = 0
+G1 X204.000 Y204.000 ; move to first perimeter point
+$DO0.0 = 1
+G1 X196.000 Y204.000 ; perimeter
+G1 X196.000 Y196.000 ; perimeter
+G1 X204.000 Y196.000 ; perimeter
+G1 X204.000 Y203.940 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y200.700 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.800 Y200.700 ; perimeter
+G1 X198.800 Y199.300 ; perimeter
+G1 X201.200 Y199.300 ; perimeter
+G1 X201.200 Y200.640 ; perimeter
+$DO0.0 = 0
+G1 X201.200 Y201.100 ; move inwards before travel
+$DO0.0 = 0
+G1 X201.600 Y201.100 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.400 Y201.100 ; perimeter
+G1 X198.400 Y198.900 ; perimeter
+G1 X201.600 Y198.900 ; perimeter
+G1 X201.600 Y201.040 ; perimeter
+$DO0.0 = 0
+G1 X202.000 Y201.500 ; move to first perimeter point
+$DO0.0 = 1
+G1 X198.000 Y201.500 ; perimeter
+G1 X198.000 Y198.500 ; perimeter
+G1 X202.000 Y198.500 ; perimeter
+G1 X202.000 Y201.440 ; perimeter
+$DO0.0 = 0
+G1 X202.309 Y200.955 ; move to first fill point
+$DO0.0 = 1
+G1 X203.692 Y199.572 ; fill
+G1 X203.692 Y198.756 ; fill
+G1 X202.309 Y200.139 ; fill
+G1 X202.308 Y199.323 ; fill
+G1 X203.692 Y197.940 ; fill
+G1 X203.692 Y197.124 ; fill
+G1 X202.308 Y198.507 ; fill
+G1 X201.808 Y198.192 ; fill
+G1 X203.672 Y196.329 ; fill
+G1 X202.876 Y196.309 ; fill
+G1 X200.993 Y198.192 ; fill
+G1 X200.177 Y198.192 ; fill
+G1 X202.060 Y196.309 ; fill
+G1 X201.244 Y196.309 ; fill
+G1 X199.361 Y198.192 ; fill
+G1 X198.545 Y198.192 ; fill
+G1 X200.428 Y196.309 ; fill
+G1 X199.612 Y196.309 ; fill
+G1 X197.729 Y198.192 ; fill
+$DO0.0 = 0
+G1 X196.309 Y196.349 ; move to first fill point
+$DO0.0 = 1
+G1 X196.349 Y196.309 ; fill
+G1 X197.164 Y196.309 ; fill
+G1 X196.309 Y197.164 ; fill
+G1 X196.309 Y197.980 ; fill
+G1 X197.980 Y196.309 ; fill
+G1 X198.796 Y196.309 ; fill
+G1 X196.309 Y198.796 ; fill
+G1 X196.309 Y199.612 ; fill
+G1 X197.692 Y198.229 ; fill
+G1 X197.692 Y199.045 ; fill
+G1 X196.309 Y200.428 ; fill
+G1 X196.309 Y201.244 ; fill
+G1 X197.692 Y199.861 ; fill
+G1 X197.692 Y200.677 ; fill
+G1 X196.309 Y202.060 ; fill
+G1 X196.309 Y202.876 ; fill
+G1 X197.692 Y201.493 ; fill
+G1 X198.192 Y201.809 ; fill
+G1 X196.329 Y203.672 ; fill
+G1 X197.124 Y203.692 ; fill
+G1 X199.007 Y201.809 ; fill
+G1 X199.823 Y201.809 ; fill
+G1 X197.940 Y203.692 ; fill
+G1 X198.756 Y203.692 ; fill
+G1 X200.639 Y201.809 ; fill
+G1 X201.455 Y201.809 ; fill
+G1 X199.572 Y203.692 ; fill
+G1 X200.388 Y203.692 ; fill
+G1 X203.692 Y200.388 ; fill
+G1 X203.692 Y201.204 ; fill
+G1 X201.204 Y203.692 ; fill
+G1 X202.020 Y203.692 ; fill
+G1 X203.692 Y202.020 ; fill
+G1 X203.692 Y202.836 ; fill
+G1 X202.836 Y203.692 ; fill
+G1 X203.652 Y203.692 ; fill
+G1 X203.692 Y203.652 ; fill
+$DO0.0 = 0
+G91
+F40
+G1 A10
+$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)
+$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)
+G1 X-104 Y-1
+G92 X$currentX Y$currentY
+G1 B-10
+G90
+G1 F4
+;ToolChange
+$DO1.0 = 0
+G1 X200.750 Y200.250 ; move to first perimeter point
+$DO1.0 = 1
+G1 X199.250 Y200.250 ; perimeter
+G1 X199.250 Y199.750 ; perimeter
+G1 X200.750 Y199.750 ; perimeter
+G1 X200.750 Y200.175 ; perimeter
+$DO1.0 = 0
+G1 X200.317 Y200.000 ; move inwards before travel
