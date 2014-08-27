@@ -1,14 +1,14 @@
-from mecode import G
-from aerotech_automation import AerotechAutomator
-automator = AerotechAutomator()
-g = G(print_lines = True)
-automator.load_state(r"C:\Users\Lewis Group\Desktop\Calibration\alignment_data.txt")
+#from mecode import G
+#from aerotech_automation import AerotechAutomator
+#automator = AerotechAutomator()
+#g = G(print_lines = True)
+#automator.load_state(r"C:\Users\Lewis Group\Desktop\Calibration\alignment_data.txt")
 
 zA  = zB = zC = zD =0
-zA = automator.substrate_origins['slide1']['A'][2]
-zB = automator.substrate_origins['slide1']['B'][2]
-x_offset = (automator.home_positions['B'][0] - automator.home_positions['A'][0])
-y_offset = (automator.home_positions['B'][1] - automator.home_positions['A'][1])
+#zA = automator.substrate_origins['slide1']['A'][2]
+#zB = automator.substrate_origins['slide1']['B'][2]
+x_offset = 100#(automator.home_positions['B'][0] - automator.home_positions['A'][0])
+y_offset = 1#(automator.home_positions['B'][1] - automator.home_positions['A'][1])
 
 original_file = r'/Users/busbees/Desktop/gcode_test.gcode'
 modified_file = r'/Users/busbees/Desktop/text_test_mod.txt'
@@ -19,11 +19,20 @@ com_port = 4
 silver_pressure = 12
 matrix_pressure = 7
 
-f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\3D epoxy assembly - Matrix_epoxy3d-1.amf.gcode', 'r')
-f2 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\3D epoxy_test_mod.pgm', 'w')
-f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
-header = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
-footer = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_footer.txt', 'r')
+### robomama#########
+#f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\3D epoxy assembly - Matrix_epoxy3d-1.amf.gcode', 'r')
+#f2 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\3D epoxy_test_mod.pgm', 'w')
+#f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
+#header = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
+#footer = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_footer.txt', 'r')
+
+### office ######
+f1 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\3D epoxy assembly - Matrix_epoxy3d-1.amf.gcode', 'r')
+f2 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\3D epoxy_test_mod.pgm', 'w')
+f3 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
+header = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
+footer = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\epoxy_footer.txt', 'r')
+
 tool_status = 1
 z_axis = 'A'
 Aaxis_multiplier = 0
@@ -66,8 +75,11 @@ for line in f1:
 
 f1.close()
 f3.close()
-f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'r')
+###robomama###
+#f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'r')
 
+###office###
+f3 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'r')
 ### Write header to file ####
 stuff = header.readlines()
 f2.writelines(stuff)  
