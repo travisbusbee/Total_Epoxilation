@@ -1,37 +1,37 @@
-#from mecode import G
-#from aerotech_automation import AerotechAutomator
-#automator = AerotechAutomator()
-#g = G(print_lines = True)
-#automator.load_state(r"C:\Users\Lewis Group\Desktop\Calibration\alignment_data.txt")
+from mecode import G
+from aerotech_automation import AerotechAutomator
+automator = AerotechAutomator()
+g = G(print_lines = True)
+automator.load_state(r"C:\Users\Lewis Group\Desktop\Calibration\alignment_data.txt")
 
 zA  = zB = zC = zD =0
-#zA = automator.substrate_origins['slide1']['A'][2]
-#zB = automator.substrate_origins['slide1']['B'][2]
-x_offset = 100#(automator.home_positions['B'][0] - automator.home_positions['A'][0])
-y_offset = 1#(automator.home_positions['B'][1] - automator.home_positions['A'][1])
+zA = automator.substrate_origins['slide1']['A'][2]
+zB = automator.substrate_origins['slide1']['B'][2]
+x_offset = (automator.home_positions['B'][0] - automator.home_positions['A'][0])
+y_offset = (automator.home_positions['B'][1] - automator.home_positions['A'][1])
 
 original_file = r'/Users/busbees/Desktop/gcode_test.gcode'
 modified_file = r'/Users/busbees/Desktop/text_test_mod.txt'
 
 silver_feed = 4
-matrix_feed = 40
+matrix_feed = 30
 com_port = 4
-silver_pressure = 12
-matrix_pressure = 7
+silver_pressure = 7.5
+matrix_pressure = 82
 
 ### robomama#########
-#f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\3D epoxy assembly - Matrix_epoxy3d-1.amf.gcode', 'r')
-#f2 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\3D epoxy_test_mod.pgm', 'w')
-#f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
-#header = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
-#footer = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_footer.txt', 'r')
+f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\rounded_single_layer_25.gcode', 'r')
+f2 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\2D_epoxy_test_mod.pgm', 'w')
+f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
+header = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
+footer = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_footer.txt', 'r')
 
 ### office ######
-f1 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\3D epoxy assembly - Matrix_epoxy3d-1.amf.gcode', 'r')
-f2 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\3D epoxy_test_mod.pgm', 'w')
-f3 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
-header = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
-footer = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\epoxy_footer.txt', 'r')
+#f1 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\3D epoxy assembly - Matrix_epoxy3d-1.amf.gcode', 'r')
+#f2 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\3D epoxy_test_mod.pgm', 'w')
+#f3 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
+#header = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
+#footer = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\epoxy_footer.txt', 'r')
 
 tool_status = 1
 z_axis = 'A'
@@ -41,6 +41,7 @@ valve = 0
 ident = 0
 check = 0
 E_in = False
+up_move = False
 skirt = False
 
 
@@ -76,10 +77,10 @@ for line in f1:
 f1.close()
 f3.close()
 ###robomama###
-#f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'r')
+f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'r')
 
 ###office###
-f3 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'r')
+#f3 = open(r'C:\Users\tbusbee\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'r')
 ### Write header to file ####
 stuff = header.readlines()
 f2.writelines(stuff)  
@@ -88,10 +89,13 @@ f2.write('Call togglePress P{}\n'.format(com_port))
 
 ### set z home ###########
 f2.write('POSOFFSET CLEAR A B C D\n')
+f2.write('$zoA = {}\n'.format(zA))
+f2.write('$zoB= {}\n'.format(zB))
 f2.write('G1 F25\n')
 f2.write('G90\n')
 f2.write('G1 A-2 B-2 C-2 D-2\n')
 f2.write('G92 A{} B{} C{} D{}\n'.format(-zA - 2, -zB - 2, -zC - 2, -zD-2))
+f2.write('G1 X518.1259 Y129.475\n')
 f2.write('G1 F{}\n'.format(matrix_feed))
 #################################
 
@@ -124,6 +128,11 @@ for line in f3:
     if "F" in new_line:
             if E_in is False:
                 f2.write("$DO{}.0 = 0\n".format(valve))
+                f2.write('DWELL 0.25\n')
+                #f2.write('G91\n')
+                #f2.write("G1 {}1\n".format(z_axis))
+                #f2.write('G90\n')
+                #up_move = True
             elif E_in is True:
                 if "retract" in new_line:
                     check = 1
@@ -156,28 +165,42 @@ for line in f3:
         if tool_status == -1:
             f2.write('$DO{}.0 = 0\n'.format(valve))
             f2.write('Call setPress P{} Q{}\n'.format(com_port, silver_pressure))
+            f2.write('Call togglePress P{}\n'.format(com_port))
+            f2.write('$DO{}.0 = 1\n'.format(valve))
+            f2.write('$DO6.0 = 1\n'.format(valve))
+            f2.write('DWELL 0.5\n')
+            f2.write('$DO{}.0 = 0\n'.format(valve))
+            f2.write('$DO6.0 = 0\n'.format(valve))
             f2.write('G91\n')
             f2.write('F40\n')
+            f2.write('$currentZ = AXISSTATUS({}, DATAITEM_PositionFeedback)\n'.format(z_axis))
             f2.write('G1 A10 \n')
             f2.write('$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)\n')
             f2.write('$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)\n')
             f2.write('G1 X{} Y{}\n'.format(x_offset, y_offset))
             f2.write('G92 X$currentX Y$currentY\n')
-            f2.write('G1 B-10\n')
             f2.write('G90\n')
+            f2.write('G1 B($currentZ-$zoA)\n')
             f2.write('G1 F{}\n'.format(silver_feed))
             valve = 1
             z_axis = 'B'
         elif tool_status ==1:
             f2.write('$DO{}.0 = 0\n'.format(valve))
             f2.write('Call setPress P{} Q{}\n'.format(com_port, matrix_pressure))
+            f2.write('Call togglePress P{}\n'.format(com_port))
+            f2.write('$DO{}.0 = 1\n'.format(valve))
+            f2.write('$DO6.0 = 1\n'.format(valve))
+            f2.write('DWELL 0.5\n')
+            f2.write('$DO{}.0 = 0\n'.format(valve))
+            f2.write('$DO6.0 = 0\n'.format(valve))
             f2.write('G91\n')
             f2.write('F40\n')
+            f2.write('$currentZ = AXISSTATUS({}, DATAITEM_PositionFeedback)\n'.format(z_axis))
             f2.write('G1 B10\n')
             f2.write('POSOFFSET CLEAR X Y\n')
             f2.write('G1 X{} Y{}\n'.format(-x_offset, -y_offset))
-            f2.write('G1 A-10\n')
             f2.write('G90\n')
+            f2.write('G1 A($currentZ-$zoB)\n')            
             f2.write('G1 F{}\n'.format(matrix_feed))
             valve = 0
             z_axis = 'A'
@@ -185,8 +208,13 @@ for line in f3:
    
     if ident != 1:
         f2.write(new_line)
+        if up_move is True:
+            f2.write('G91\n')
+            f2.write('G1 {}-1\n'.format(z_axis))
+            f2.write('G90\n')
     E_in = False
     F_in = False
+    up_move = False
     ident = 2
    
 
