@@ -1,6 +1,6 @@
 from mecode import G
 import numpy as np
-from aerotech_automator import AerotechAutomator
+from aerotech_automation import AerotechAutomator
 
 
 #Location of written GCode file generated from this script
