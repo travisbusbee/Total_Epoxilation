@@ -5,22 +5,23 @@ g = G(print_lines = True)
 automator.load_state(r"C:\Users\Lewis Group\Desktop\Calibration\alignment_data.txt")
 
 zA  = zB = zC = zD =0
-zA = automator.substrate_origins['slide1']['A'][2]
-zB = automator.substrate_origins['slide1']['B'][2]
+zA = automator.substrate_origins['slide1']['A'][2]+0.07
+zB = automator.substrate_origins['slide1']['B'][2]+0.07
 x_offset = (automator.home_positions['B'][0] - automator.home_positions['A'][0])
 y_offset = (automator.home_positions['B'][1] - automator.home_positions['A'][1])
 
 original_file = r'/Users/busbees/Desktop/gcode_test.gcode'
 modified_file = r'/Users/busbees/Desktop/text_test_mod.txt'
 
-silver_feed = 4
-matrix_feed = 30
+silver_feed = 3
+matrix_feed = 20
 com_port = 4
-silver_pressure = 7.5
-matrix_pressure = 82
+silver_pressure = 11
+matrix_pressure = 45
+silver_extra_height = 0.0
 
 ### robomama#########
-f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\rounded_single_layer_25.gcode', 'r')
+f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\V8 assembly.gcode', 'r')
 f2 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\2D_epoxy_test_mod.pgm', 'w')
 f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
 header = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
@@ -97,6 +98,8 @@ f2.write('G1 A-2 B-2 C-2 D-2\n')
 f2.write('G92 A{} B{} C{} D{}\n'.format(-zA - 2, -zB - 2, -zC - 2, -zD-2))
 f2.write('G1 X518.1259 Y129.475\n')
 f2.write('G1 F{}\n'.format(matrix_feed))
+#f2.write('G108\n')
+#f2.write('VELOCITY ON\n')
 #################################
 
 
@@ -128,7 +131,7 @@ for line in f3:
     if "F" in new_line:
             if E_in is False:
                 f2.write("$DO{}.0 = 0\n".format(valve))
-                f2.write('DWELL 0.25\n')
+                #f2.write('DWELL 0.25\n')
                 #f2.write('G91\n')
                 #f2.write("G1 {}1\n".format(z_axis))
                 #f2.write('G90\n')
@@ -141,6 +144,10 @@ for line in f3:
                 if check < 0.5:
                     
                     f2.write("$DO{}.0 = 1\n".format(valve))
+                    if valve == 1:
+                        f2.write('DWELL 0.5\n')
+                    if valve ==0:
+                        f2.write('DWELL 0.1\n')
                 check = 0
                 
             (front, back) = new_line.split(r'F', 1)[0], new_line.split(r'F', 1)[1]
@@ -171,6 +178,13 @@ for line in f3:
             f2.write('DWELL 0.5\n')
             f2.write('$DO{}.0 = 0\n'.format(valve))
             f2.write('$DO6.0 = 0\n'.format(valve))
+            
+            ## purge silver real fast
+            f2.write('$DO1.0 = 1\n')
+            f2.write('DWELL 0.3\n')
+            f2.write('$DO1.0 = 0\n')
+            
+            f2.write('Call togglePress P{}\n'.format(com_port))
             f2.write('G91\n')
             f2.write('F40\n')
             f2.write('$currentZ = AXISSTATUS({}, DATAITEM_PositionFeedback)\n'.format(z_axis))
@@ -180,7 +194,7 @@ for line in f3:
             f2.write('G1 X{} Y{}\n'.format(x_offset, y_offset))
             f2.write('G92 X$currentX Y$currentY\n')
             f2.write('G90\n')
-            f2.write('G1 B($currentZ-$zoA)\n')
+            f2.write('G1 B($currentZ-$zoA+{})\n'.format(silver_extra_height))
             f2.write('G1 F{}\n'.format(silver_feed))
             valve = 1
             z_axis = 'B'
@@ -193,6 +207,7 @@ for line in f3:
             f2.write('DWELL 0.5\n')
             f2.write('$DO{}.0 = 0\n'.format(valve))
             f2.write('$DO6.0 = 0\n'.format(valve))
+            f2.write('Call togglePress P{}\n'.format(com_port))
             f2.write('G91\n')
             f2.write('F40\n')
             f2.write('$currentZ = AXISSTATUS({}, DATAITEM_PositionFeedback)\n'.format(z_axis))
@@ -218,7 +233,11 @@ for line in f3:
     ident = 2
    
 
-f2.write('Call togglePress P{}'.format(com_port))
+f2.write('Call togglePress P{}\n'.format(com_port))
+f2.write('G91\n')
+f2.write('G1 A30 B30\n')
+f2.write('POSOFFSET CLEAR X Y U A B C D\n')
+#f2.write('VELOCITY OFF\n')
 
 stuff = footer.readlines()
 f2.writelines(stuff)    
