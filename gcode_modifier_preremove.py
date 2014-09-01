@@ -13,15 +13,17 @@ y_offset = (automator.home_positions['B'][1] - automator.home_positions['A'][1])
 original_file = r'/Users/busbees/Desktop/gcode_test.gcode'
 modified_file = r'/Users/busbees/Desktop/text_test_mod.txt'
 
+velocity = False
+silver_up = True
 silver_feed = 3
-matrix_feed = 20
+matrix_feed = 40
 com_port = 4
-silver_pressure = 11
-matrix_pressure = 45
-silver_extra_height = 0.0
+silver_pressure = 15
+matrix_pressure = 59
+silver_extra_height = 0.2
 
 ### robomama#########
-f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\V8 assembly.gcode', 'r')
+f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\Fileted single layer epoxy assembly.gcode', 'r')
 f2 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\2D_epoxy_test_mod.pgm', 'w')
 f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
 header = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
@@ -98,8 +100,9 @@ f2.write('G1 A-2 B-2 C-2 D-2\n')
 f2.write('G92 A{} B{} C{} D{}\n'.format(-zA - 2, -zB - 2, -zC - 2, -zD-2))
 f2.write('G1 X518.1259 Y129.475\n')
 f2.write('G1 F{}\n'.format(matrix_feed))
-#f2.write('G108\n')
-#f2.write('VELOCITY ON\n')
+if velocity is True:
+    f2.write('G108\n')
+    f2.write('VELOCITY ON\n')
 #################################
 
 
@@ -131,11 +134,13 @@ for line in f3:
     if "F" in new_line:
             if E_in is False:
                 f2.write("$DO{}.0 = 0\n".format(valve))
-                #f2.write('DWELL 0.25\n')
-                #f2.write('G91\n')
-                #f2.write("G1 {}1\n".format(z_axis))
-                #f2.write('G90\n')
-                #up_move = True
+                if valve == 1:
+                    if silver_up is True:
+                        f2.write('DWELL 0.25\n')
+                        f2.write('G91\n')
+                        f2.write("G1 {}1\n".format(z_axis))
+                        f2.write('G90\n')
+                        up_move = True
             elif E_in is True:
                 if "retract" in new_line:
                     check = 1
@@ -144,10 +149,11 @@ for line in f3:
                 if check < 0.5:
                     
                     f2.write("$DO{}.0 = 1\n".format(valve))
+                    
                     if valve == 1:
                         f2.write('DWELL 0.5\n')
-                    if valve ==0:
-                        f2.write('DWELL 0.1\n')
+                    #if valve ==0:
+                        #f2.write('DWELL 0.1\n')
                 check = 0
                 
             (front, back) = new_line.split(r'F', 1)[0], new_line.split(r'F', 1)[1]
@@ -181,7 +187,7 @@ for line in f3:
             
             ## purge silver real fast
             f2.write('$DO1.0 = 1\n')
-            f2.write('DWELL 0.3\n')
+            f2.write('DWELL 0.6\n')
             f2.write('$DO1.0 = 0\n')
             
             f2.write('Call togglePress P{}\n'.format(com_port))
@@ -237,7 +243,8 @@ f2.write('Call togglePress P{}\n'.format(com_port))
 f2.write('G91\n')
 f2.write('G1 A30 B30\n')
 f2.write('POSOFFSET CLEAR X Y U A B C D\n')
-#f2.write('VELOCITY OFF\n')
+if velocity is True:
+    f2.write('VELOCITY OFF\n')
 
 stuff = footer.readlines()
 f2.writelines(stuff)    
