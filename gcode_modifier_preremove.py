@@ -15,15 +15,15 @@ modified_file = r'/Users/busbees/Desktop/text_test_mod.txt'
 
 velocity = False
 silver_up = True
-silver_feed = 3
-matrix_feed = 40
+silver_feed = 6
+matrix_feed = 25
 com_port = 4
-silver_pressure = 15
-matrix_pressure = 59
-silver_extra_height = 0.2
+silver_pressure = 14
+matrix_pressure = 42
+silver_extra_height = 0.1
 
 ### robomama#########
-f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\Fileted single layer epoxy assembly.gcode', 'r')
+f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\vertical_V8 assembly - V8 logo-1.amf.gcode', 'r')
 f2 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\2D_epoxy_test_mod.pgm', 'w')
 f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
 header = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
@@ -111,7 +111,7 @@ for line in f3:
     if "Z" in line:
         back_end = line.split(r'Z', 1)[1]
         number = float(back_end.split(r' ', 1)[0])
-        temp_line = 'G1 {}{} {}{}'.format('A', number +10*Aaxis_multiplier, 'B', number+10*Baxis_multiplier) #+ line.split(r'Z', 1)[1]
+        temp_line = 'G1 {}{} {}{}'.format('A', number +10.0*Aaxis_multiplier, 'B', number+10*Baxis_multiplier) #+ line.split(r'Z', 1)[1]
         print "temp line: {}".format(temp_line)
         line = temp_line
     if "E" in line:
@@ -194,7 +194,7 @@ for line in f3:
             f2.write('G91\n')
             f2.write('F40\n')
             f2.write('$currentZ = AXISSTATUS({}, DATAITEM_PositionFeedback)\n'.format(z_axis))
-            f2.write('G1 A10 \n')
+            f2.write('G1 A10 B10\n')
             f2.write('$currentX = AXISSTATUS(X, DATAITEM_PositionFeedback)\n')
             f2.write('$currentY = AXISSTATUS(Y, DATAITEM_PositionFeedback)\n')
             f2.write('G1 X{} Y{}\n'.format(x_offset, y_offset))
@@ -204,6 +204,8 @@ for line in f3:
             f2.write('G1 F{}\n'.format(silver_feed))
             valve = 1
             z_axis = 'B'
+            Baxis_multiplier = 0
+            Aaxis_multiplier = 1
         elif tool_status ==1:
             f2.write('$DO{}.0 = 0\n'.format(valve))
             f2.write('Call setPress P{} Q{}\n'.format(com_port, matrix_pressure))
@@ -217,7 +219,7 @@ for line in f3:
             f2.write('G91\n')
             f2.write('F40\n')
             f2.write('$currentZ = AXISSTATUS({}, DATAITEM_PositionFeedback)\n'.format(z_axis))
-            f2.write('G1 B10\n')
+            f2.write('G1 A10 B10\n')
             f2.write('POSOFFSET CLEAR X Y\n')
             f2.write('G1 X{} Y{}\n'.format(-x_offset, -y_offset))
             f2.write('G90\n')
@@ -225,6 +227,8 @@ for line in f3:
             f2.write('G1 F{}\n'.format(matrix_feed))
             valve = 0
             z_axis = 'A'
+            Baxis_multiplier = 1
+            Aaxis_multiplier = 0
             
    
     if ident != 1:

@@ -39,7 +39,7 @@ SUBSTRATES = {
         'origin': (180,109),
         'size': 'auto',
         'profile': True,
-        'profile-spacing': (20,45),
+        'profile-spacing': (30,44),
     },
 }
 #Defining profilometry parameters
