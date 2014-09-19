@@ -8,7 +8,7 @@ outfile = r"C:\Users\Lewis Group\Documents\GitHub\aerotech_automation\cell_print
 
 #List of axes used for printing - comment out the axes not being used
 AXES_USED = ['A',
-            'B',
+            #'B',
             #'C', 
             #'D'
             ]

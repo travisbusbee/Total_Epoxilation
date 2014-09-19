@@ -1,29 +1,29 @@
 from mecode import G
-from aerotech_automation import AerotechAutomator
-automator = AerotechAutomator()
+#from aerotech_automation import AerotechAutomator
+#automator = AerotechAutomator()
 g = G(print_lines = True)
-automator.load_state(r"C:\Users\Lewis Group\Desktop\Calibration\alignment_data.txt")
+#automator.load_state(r"C:\Users\Lewis Group\Desktop\Calibration\alignment_data.txt")
 
 zA  = zB = zC = zD =0
-zA = automator.substrate_origins['slide1']['A'][2]+0.07
-zB = automator.substrate_origins['slide1']['B'][2]+0.07
-x_offset = (automator.home_positions['B'][0] - automator.home_positions['A'][0])
-y_offset = (automator.home_positions['B'][1] - automator.home_positions['A'][1])
+zA = -64#automator.substrate_origins['slide1']['A'][2]+0.07
+zB = -50#automator.substrate_origins['slide1']['B'][2]+0.07
+x_offset = 0#(automator.home_positions['B'][0] - automator.home_positions['A'][0])
+y_offset = 0#(automator.home_positions['B'][1] - automator.home_positions['A'][1])
 
 original_file = r'/Users/busbees/Desktop/gcode_test.gcode'
 modified_file = r'/Users/busbees/Desktop/text_test_mod.txt'
 
-velocity = False
+velocity = True
 silver_up = True
 silver_feed = 6
-matrix_feed = 25
+matrix_feed = 15
 com_port = 4
 silver_pressure = 14
-matrix_pressure = 42
+matrix_pressure = 45
 silver_extra_height = 0.1
 
 ### robomama#########
-f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\vertical_V8 assembly - V8 logo-1.amf.gcode', 'r')
+f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\Me_6scale.gcode', 'r')
 f2 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\2D_epoxy_test_mod.pgm', 'w')
 f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
 header = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
