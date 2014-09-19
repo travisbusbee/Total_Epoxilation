@@ -23,7 +23,7 @@ matrix_pressure = 45
 silver_extra_height = 0.1
 
 ### robomama#########
-f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\Me_6scale.gcode', 'r')
+f1 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\StanfordBunny_UV_scale55_infill40.gcode', 'r')
 f2 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\2D_epoxy_test_mod.pgm', 'w')
 f3 = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\gcode_test_removed.txt', 'w')
 header = open(r'C:\Users\Lewis Group\Documents\GitHub\Total_Epoxilation\epoxy_header.txt', 'r')
