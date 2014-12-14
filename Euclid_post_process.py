@@ -1,6 +1,6 @@
 
 ### Trav's Laptop#########
-f1 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\quaad_code.gcode', 'r')
+f1 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\test_wire-sliced.gcode', 'r')
 f3 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\test_code_processed_2.gcode', 'w')
 
 

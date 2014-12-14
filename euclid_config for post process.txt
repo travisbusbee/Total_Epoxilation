@@ -23,7 +23,7 @@
   "skirt_outset": 6,
   "tools": [
     {
-      "activate_cmd": "G91\nG1 Z3 F1000 ; lift up 3\nG90\nG1 Y115 F12000 ; go to y max\nG1 Z17 F1000; go to proper z wipe height\nG1 X0 F8000; enter wipe brush area\nG1 Y78 ; exit wipe brush area\nG1 Z20 F1000 ; \nG90\nG1 X22 F12000\nG1 Z16 F1000\nG90\n;T0 activated\n",
+      "activate_cmd": "G91\nG1 Z3 F1000 ; lift up 3\nG90\nG1 Y115 F12000 ; go to y max\nG91\nG1 E3\nG90\nG1 Z17 F1000; go to proper z wipe height\nG1 X0 F8000; enter wipe brush area\nG1 Y78 ; exit wipe brush area\nG1 Z20 F1000 ; \nG90\nG1 X22 F12000\nG1 Z16 F1000\nG90\n;T0 activated\n",
       "config": "FFFTool",
       "deactivate_cmd": "M221 S100",
       "extrusion": {
@@ -61,7 +61,7 @@
       "print_height": 0.19,
       "print_rates": {
         "config": "RateConfig",
-        "first_layer": 30,
+        "first_layer": 40,
         "infill": 60,
         "inner_inset": 40,
         "outer_inset": 40,
@@ -72,7 +72,7 @@
       "temp_wait": false
     },
     {
-      "activate_cmd": "G91\nG1 Z10 F1000\nG4 P200 \nM400 \nM280 P0 S159\nG90\nT0\nG1 Y115 F10000\nG1 X140 F9000\nG1 Z13.5 F1000\nG1 X150 F3000\nG1 Y105 F3000\nT1\nG91\nG1 Z5 F1000\nG90\n;T1 activated",
+      "activate_cmd": "G91\nG1 Z10 F1000\nG4 P200 \nM400 \nM280 P0 S159\nG90\nT0\nG1 Y115 F10000\nG1 X140 F9000\nG1 Z15.5 F1000\nG1 X150 F3000\nG1 Y105 F3000\nT1\nG91\nG1 Z5 F1000\nG90\n;T1 activated",
       "config": "PneumaticTool",
       "deactivate_cmd": "M400 \nM280 P0 S80\n",
       "extrusion": {
@@ -92,7 +92,7 @@
       "offset": [
         48.4,
         1,
-        -0.2
+        -6
       ],
       "path_order": [
         "perimeters"
@@ -101,7 +101,7 @@
       "perimeter_insets": 0,
       "point_deposition_ml_per_second": 0.0002,
       "point_deposition_postamble": "",
-      "pressure_off_cmd": "M400\nM42 P6 S0\nG91\nG1 Y1 F5000\nG90\n",
+      "pressure_off_cmd": "M400\nM42 P6 S0\nG91\nG1 X0.75 Y0.75 F5000\nG90\n",
       "pressure_on_cmd": "M400\nM42 P6 S255\nG4 P350\n",
       "print_height": 0.19,
       "print_rates": {
@@ -116,7 +116,7 @@
       "retraction_length": 3
     }
   ],
-  "travel_rate": 125,
+  "travel_rate": 140,
   "version": {
     "build": [],
     "major": 0,
