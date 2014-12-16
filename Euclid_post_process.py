@@ -1,7 +1,7 @@
 
 ### Trav's Laptop#########
-f1 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\0.55_root_planter_box_v4_solid (repaired)-sliced (2).gcode', 'r')
-f3 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\test_code_processed_3.gcode', 'w')
+f1 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\voxel8Timer-sliced (3).gcode', 'r')
+f3 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\test_code_processed_4.gcode', 'w')
 
 
 
@@ -53,7 +53,10 @@ for line in f1:
           
     if ident ==6:
         current_z_value = float(current_z_string)
-        safe_z = current_z_value + 3
+        if current_z_value > 10:
+            safe_z = current_z_value + 3
+        else:
+            safe_z = 13
         f3.write('G1 Z' + str(safe_z) + ' F1000\n')  
         ident = 0    
           

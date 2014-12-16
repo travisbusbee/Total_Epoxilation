@@ -1,0 +1,134 @@
+{
+  "bed_temp": 0,
+  "build_center": [
+    95,
+    50
+  ],
+  "build_volume": {
+    "x_max": 150,
+    "x_min": 0,
+    "y_max": 105,
+    "y_min": 0,
+    "z_max": 80,
+    "z_min": 0
+  },
+  "comments": true,
+  "config": "FFFConfig",
+  "export_digits": 5,
+  "output_extension": "_v8_g2_2.gcode",
+  "output_style": "gcode",
+  "postamble": "G1 X0 Y115 F2000",
+  "preamble": "M104 S180\n M106 S150\nM104 S220\nM280 P0 S80\nM109 S180\n M104 S220\nG28 Y\nG28  ; home all axes\nG29\nG1 X0 Y0 Z20 F3000\nM109 S220\nG92 E0\nG1 E-5 F300\nG4 S2\nG1 E20 F300\n;G4 S5\nG92 E0\nG1 Z0 X100 E5 F3000 ; bell move to copy ultimaker\nG92 E0 ; reset extruder value to 0\nM400\nM42 P2 S150\n",
+  "resume_cmd": "G91\n G1 Z10\n G4 S60\n G90\n\n M399\n",
+  "skirt_outset": 6,
+  "tools": [
+    {
+      "activate_cmd": "G91\nG1 Z3 F1000 ; lift up 3\nG90\nG1 Y115 F12000 ; go to y max\nG91\nG1 E3\nG90\nG1 Z17 F1000; go to proper z wipe height\nG1 X0 F8000; enter wipe brush area\nG1 Y78 ; exit wipe brush area\nG1 Z20 F1000 ; \nG90\nG1 X22 F12000\n;move to z\nG1 Z16 F1000\nG90\n;T0 activated\n",
+      "config": "FFFTool",
+      "deactivate_cmd": "M221 S100",
+      "extrusion": {
+        "absolute": true,
+        "config": "VolumetricExtrusionConfig",
+        "first_layer_width": 0.8,
+        "multiplier": 0.97,
+        "overlap_factor": 0.9,
+        "width": 0.4
+      },
+      "fan_enabled_under_layer_time": 1,
+      "filament_diameter": 1.75,
+      "first_perimeter_insets": 4,
+      "infill_density": 0.5,
+      "infill_rotation": 60,
+      "infill_rotation_per_layer": 60,
+      "infill_style": "rectilinear",
+      "material": "thermoplastic",
+      "max_print_height": 0.3,
+      "min_print_height": 0.15,
+      "minimum_layer_time": 12,
+      "minimum_retract_distance": 3,
+      "nozzle_temp": 225,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "path_order": [
+        "perimeters",
+        "infill"
+      ],
+      "path_style": "infill",
+      "perimeter_insets": 2,
+      "print_height": 0.19,
+      "print_rates": {
+        "config": "RateConfig",
+        "first_layer": 40,
+        "infill": 60,
+        "inner_inset": 40,
+        "outer_inset": 40,
+        "retraction": 80
+      },
+      "retraction_length": 6.5,
+      "solid_layers": 3,
+      "temp_wait": false
+    },
+    {
+      "activate_cmd": "G91\nG1 Z10 F1000\nG4 P200 \nM400 \nM280 P0 S159\nG90\nT0\nG1 Y115 F10000\nG1 X140 F9000\nG1 Z15.5 F1000\nG1 X150 F3000\nG1 Y105 F3000\nT1\n;move to z\nG1 Z22 F1000\n;T1 activated",
+      "config": "PneumaticTool",
+      "deactivate_cmd": "M400 \nM280 P0 S80\n",
+      "extrusion": {
+        "config": "PneumaticExtrusionConfig",
+        "first_layer_width": 0.25,
+        "overlap_factor": 1,
+        "width": 0.38
+      },
+      "fan_enabled_under_layer_time": 1,
+      "first_perimeter_insets": 1,
+      "material": "conductor",
+      "max_point_deposition_area": 2,
+      "max_print_height": 0.3,
+      "min_print_height": 0.15,
+      "minimum_layer_time": 1,
+      "minimum_retract_distance": 0.1,
+      "offset": [
+        48.4,
+        1,
+        -6
+      ],
+      "path_order": [
+        "perimeters",
+		"infill"
+      ],
+      "path_style": "trace",
+	  "infill_density": 0.5,
+      "infill_rotation": 60,
+      "infill_rotation_per_layer": 60,
+      "infill_style": "rectilinear",
+      "perimeter_insets": 1,
+      "point_deposition_ml_per_second": 0.0002,
+      "point_deposition_postamble": "",
+      "pressure_off_cmd": "M400\nM42 P6 S0\nG91\nG1 X0.75 Y0.75 F5000\nG90\n",
+      "pressure_on_cmd": "M400\nM42 P6 S255\nG4 P350\n",
+      "print_height": 0.19,
+      "print_rates": {
+        "config": "RateConfig",
+        "first_layer": 9,
+        "infill": 9,
+        "inner_inset": 9,
+        "outer_inset": 9,
+        "retraction": 70
+      },
+      "retraction_height": 3,
+      "retraction_length": 3
+    }
+  ],
+  "travel_rate": 140,
+  "version": {
+    "build": [],
+    "major": 0,
+    "minor": 0,
+    "patch": 5,
+    "prerelease": [
+      "dev"
+    ]
+  }
+}
