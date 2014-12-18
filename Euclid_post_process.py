@@ -1,7 +1,7 @@
 
 ### Trav's Laptop#########
-f1 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\voxel8Timer-sliced (3).gcode', 'r')
-f3 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\test_code_processed_4.gcode', 'w')
+f1 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\root_planter_box_v4_solid-sliced (4)_v8_g2_2.gcode', 'r') #input file
+f3 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\test_code_processed_9.gcode', 'w') #output file
 
 
 
@@ -12,7 +12,7 @@ ident = 0
 
 
 
-for line in f1:
+for i, line in enumerate(f1):
     if "Z" in line:
         if "X" in line:
             back_line = line.split("Z", 1)[1]
@@ -26,11 +26,12 @@ for line in f1:
             f3.write(line)
     if ident == 0:
         f3.write(line)
-    if ident ==2:
-        ident = 1
+    #if ident ==2:
+    #    ident = 1
         
-    elif ident ==1:
+    if ident ==2 and "Z" in line:
         xy_val = line.split('Z', 1)[0]
+        #print "ERROR:", i, line
         back_end = line.split('Z', 1)[1]
         speed = back_end.split(' ',1)[1]
         new_xy = xy_val + ' ' + speed
