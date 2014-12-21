@@ -1,7 +1,7 @@
 
 ### Trav's Laptop#########
-f1 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\root_planter_box_v4_solid-sliced (4)_v8_g2_2.gcode', 'r') #input file
-f3 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\test_code_processed_9.gcode', 'w') #output file
+f1 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\root_planter_box_v4_solid-sliced (6)_v8_g2_2.gcode', 'r') #input file
+f3 = open(r'C:\Users\Workstation 1\Documents\GitHub\Total_Epoxilation\code_processed_touchpad.gcode', 'w') #output file
 
 
 
